@@ -3,7 +3,7 @@ let data = Mock.mock({
   "permission": [],
   role: [{
     id: 5,
-    pid: 0,
+    pId: 0,
     name: '超级管理员',
     des: '超级管理员',
     subon: '2019-05-08 16:54:26',
@@ -11,7 +11,7 @@ let data = Mock.mock({
     del: 0
   },{
     id: 1,
-    pid: 0,
+    pId: 0,
     name: '管理员',
     des: '管理员',
     subon: '2019-05-08 16:54:26',
@@ -19,7 +19,7 @@ let data = Mock.mock({
     del: 0
   },{
     id: 2,
-    pid: 0,
+    pId: 0,
     name: '后台开发员',
     des: '后台开发员',
     subon: '2019-05-08 16:54:26',
@@ -27,7 +27,7 @@ let data = Mock.mock({
     del: 0
   },{
     id: 3,
-    pid: 0,
+    pId: 0,
     name: '教师',
     des: '教师',
     subon: '2019-05-08 16:54:26',
@@ -35,7 +35,7 @@ let data = Mock.mock({
     del: 0
   },{
     id: 4,
-    pid: 0,
+    pId: 0,
     name: '学生',
     des: '学生',
     subon: '2019-05-08 16:54:26',
@@ -54,7 +54,7 @@ let data = Mock.mock({
     url: '/student',
     del: 0,
     status: 0,
-    pid: 0,
+    pId: 0,
     permissionId: 1
   }, {
     id: 2,
@@ -64,7 +64,7 @@ let data = Mock.mock({
     url: '/teacher',
     del: 0,
     status: 0,
-    pid: 0,
+    pId: 0,
     permissionId: 2
   },{
     id: 3,
@@ -74,12 +74,12 @@ let data = Mock.mock({
     url: '/student/list',
     del: 0,
     status: 0,
-    pid: 1,
+    pId: 1,
     permissionId: 3
   }, ],
   resource:[{
     id: 1,
-    pid: 0,
+    pId: 0,
     del: 0,
     status: 0,
     type: 'button',
