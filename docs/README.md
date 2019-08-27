@@ -689,9 +689,8 @@ admin1|aicoder.com|是
 | 1   | id  | Number | 权限ID       |
 | 2   | del  | Number | 1删除， 0 未删除 |
 | 3   | subon   | String | 提交时间             |
-| 4   | code   | String | 权限码             |
-| 5   | roleId  | Number | 角色ID       |
-| 6   | permissionId  | Number | 权限ID       |
+| 4   | roleId  | Number | 角色ID       |
+| 5   | permissionId  | Number | 权限ID       |
 
 #### 返回值
 
@@ -712,6 +711,48 @@ admin1|aicoder.com|是
 > 分页、删除、修改都同 JSON-Server
 
 ## 用户角色接口
+
+地址： `http://localhost:8888/per/user_role`
+
+### 添加用户角色关联
+
+添加用户角色关联接口
+
+| 类型   | 说明                                                   |
+|------|------------------------------------------------------|
+| 接口地址 | `http://localhost:8888/per/user_role` |
+| 请求方式 | `POST`                                               |
+| 数据类型 | `application/json`                                   |
+
+#### 请求参数
+
+请求body：
+
+| 序号  | 字段    | 类型     | 说明                |
+|-----|-------|--------|-------------------|
+| 1   | id  | Number | 权限ID       |
+| 2   | del  | Number | 1删除， 0 未删除 |
+| 3   | subon   | String | 提交时间             |
+| 4   | roleId  | Number | 角色ID       |
+| 5   | userId  | Number | 用户ID       |
+
+#### 返回值
+
+后台返回当前添加的用户角色关联对象。
+
+#### 返回实例
+
+```js
+{
+  id: 1,
+  userId: 1003,
+  roleId: 1,
+  del: 0,
+  subon: '2019-05-08 16:57:50'
+}
+```
+
+> 分页、删除、修改都同 JSON-Server
 
 ## 用户权限接口
 
