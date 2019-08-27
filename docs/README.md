@@ -756,6 +756,48 @@ admin1|aicoder.com|是
 
 ## 用户权限接口
 
+地址： `http://localhost:8888/per/user_permission`
+
+### 添加用户角色关联
+
+添加用户权限关联接口
+
+| 类型   | 说明                                                   |
+|------|------------------------------------------------------|
+| 接口地址 | `http://localhost:8888/per/user_permission` |
+| 请求方式 | `POST`                                               |
+| 数据类型 | `application/json`                                   |
+
+#### 请求参数
+
+请求body：
+
+| 序号  | 字段    | 类型     | 说明                |
+|-----|-------|--------|-------------------|
+| 1   | id  | Number | 权限ID       |
+| 2   | del  | Number | 1删除， 0 未删除 |
+| 3   | subon   | String | 提交时间             |
+| 4   | permissionId  | Number | 权限ID       |
+| 5   | userId  | Number | 用户ID       |
+
+#### 返回值
+
+后台返回当前添加的用户权限关联对象。
+
+#### 返回实例
+
+```js
+{
+  id: 1,
+  userId: 1002,
+  permissionId: 1003,
+  del: 0,
+  subOn: '2019-06-10 09:48:01'
+}
+```
+
+> 分页、删除、修改都同 JSON-Server
+
 ## 轮播图接口
 
 #### 请求参数
