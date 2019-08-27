@@ -2,4 +2,4 @@
 
 此系统为aicoder.com内部使用的，权限管理后台数据接口服务器系统。
 
-接口文档地址：https://malun666.github.io/hgdapidocs/#/
+接口文档地址：https://malun666.github.io/radminserver/#/
