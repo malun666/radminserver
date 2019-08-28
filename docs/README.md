@@ -800,13 +800,13 @@ admin1|aicoder.com|是
 
 ## 轮播图接口
 
-#### 请求参数
+#### 轮播图接口请求参数
 
 无
 
 > 需要添加token密钥到header的Authorization中。
 
-#### 返回值
+#### 轮播图接口返回值
 
 后台返回一个数组，数组里面内容是轮播图的数据。
 
@@ -821,7 +821,7 @@ admin1|aicoder.com|是
 | imgUrl        | String   | /a/b.png                 | 图片地址     |
 | url         | String   | /home/a.html                       | 跳转地址    |
 
-#### 返回实例
+#### 轮播图接口返回实例
 
 ```js
 // 获取成功返回的内容
