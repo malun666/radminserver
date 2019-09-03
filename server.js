@@ -105,5 +105,5 @@ server.use('/per', perRouter);
 server.use('/per/', routerUser);
 
 server.listen(8888, () => {
-  console.log('JSON Server is running, http://localhost:8888');
+  console.log('API Server is running, http://localhost:8888');
 });
