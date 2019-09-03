@@ -4,6 +4,8 @@
 
 接口文档地址：https://malun666.github.io/radminserver/#/
 
+github仓库地址：[https://github.com/malun666/radminserver](https://github.com/malun666/radminserver)
+
 > 内部文档禁止分享
 
 ## 综述
