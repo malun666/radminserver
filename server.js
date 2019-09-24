@@ -54,7 +54,7 @@ server.post('/api/userlogin', (req, res) => {
 });
 
 // 验证码
-server.get('/per/code', (req,res)=>{
+server.get('/api/code', (req,res)=>{
   const cap = captcha.create();
   // req.session.captcha = cap.text; // session 存储
   res.type('svg'); // 响应的类型
