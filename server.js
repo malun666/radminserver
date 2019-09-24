@@ -55,7 +55,12 @@ server.post('/api/userlogin', (req, res) => {
 
 // 验证码
 server.get('/api/code', (req,res)=>{
-  const cap = captcha.create();
+  const cap = captcha.create({
+    color: true,
+    size: 5,
+    ignoreChars: '0oOi1gjdDl',
+    noise: 1
+  });
   // req.session.captcha = cap.text; // session 存储
   res.type('svg'); // 响应的类型
   res.send(cap.data);
