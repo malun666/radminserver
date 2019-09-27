@@ -256,6 +256,9 @@ aicoder1|aicoder.com|否
 aicoder2|aicoder.com|是
 admin|aicoder.com|是
 admin1|aicoder.com|是
+18911112222|aicoder.com|是
+18911113333|aicoder.com|是
+18911114444|aicoder.com|是
 
 ## 用户操作接口
 
