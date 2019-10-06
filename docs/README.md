@@ -386,7 +386,8 @@ admin1|aicoder.com|是
         "subon": "2019-05-08 17:07:16",
         "subby": 1001,
         "code": 10004,
-        "url": ""
+        "url": "",
+        "order": 1
     },
     {
         "id": 1014,
@@ -398,7 +399,8 @@ admin1|aicoder.com|是
         "subon": "2019-05-08 17:07:16",
         "subby": 1001,
         "code": 10014,
-        "url": ""
+        "url": "",
+        "order": 2
     }
 ]
 ```
@@ -429,27 +431,11 @@ admin1|aicoder.com|是
 | 8   | code   | String | 权限码             |
 | 9   | url   | String | 权限地址             |
 | 10   | pId  | Number | 权限父ID       |
+| 11   | order  | Number |排序       |
 
 #### 返回值
 
 后台返回添加当前权限对象。
-
-#### 返回实例
-
-```js
-{
-    "id": 1000,
-    pId: 0,
-    type: 'menu',
-    des: '用户管理',
-    status: 0,
-    del: 0,
-    subon: '2019-05-08 17:07:16',
-    subby: 1001,
-    "code": 10000,
-    url: '/user'
-}
-```
 
 > 权限其他修改、删除、搜索查询等同`json-server`的`api`
 
