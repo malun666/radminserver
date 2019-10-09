@@ -4,7 +4,8 @@ const permissionData = require('./permission');
 const captcha = require('svg-captcha');
 // const perRouter = jsonServer.router(permissionData);
 const userArr = require('./user');
-const routerUser = jsonServer.router({...{user:userArr}, permissionData});
+const routerUser = jsonServer.router({...{user:userArr}, ...permissionData});
+console.log({...{user:userArr}, ...permissionData});
 const multer = require('multer');
 const path = require('path');
 const middlewares = jsonServer.defaults();
@@ -108,8 +109,7 @@ server.use('/per/getUserPer/:id', (req, res) => {
 });
 
 // server.use('/per', perRouter);
-server.use('/per/', routerUser);
-
+server.use('/per', routerUser);
 server.listen(8888, () => {
   console.log('API Server is running, http://localhost:8888');
 });
