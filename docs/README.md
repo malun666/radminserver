@@ -541,17 +541,18 @@ admin1|aicoder.com|是
 | 请求方式 | `POST`                                               |
 | 数据类型 | `application/json`                                   |
 
-#### 请求参数
+#### 角色请求参数
 
 | 序号  | 字段    | 类型     | 说明                |
 |-----|-------|--------|-------------------|
 | 1   | id  | Number | 权限ID       |
 | 2   | del  | Number | 1删除， 0 未删除 |
-| 3   | des   | String | 权限描述             |
+| 3   | des   | String | 角色描述             |
 | 4   | status   | Number   | 权限状态，0启用， 1禁用             |
 | 5   | subon   | String | 提交时间             |
 | 6   | code   | String | 权限码             |
 | 7   | pId  | Number | 权限父ID       |
+| 8   | name  | String | 角色名字       |
 
 #### 返回值
 
@@ -631,11 +632,12 @@ admin1|aicoder.com|是
 |-----|-------|--------|-------------------|
 | 1   | id  | Number | 权限ID       |
 | 2   | del  | Number | 1删除， 0 未删除 |
-| 3   | des   | String | 权限描述             |
+| 3   | des   | String | 角色描述             |
 | 4   | status   | Number   | 权限状态，0启用， 1禁用             |
 | 5   | subon   | String | 提交时间             |
 | 6   | code   | String | 权限码             |
 | 7   | pId  | Number | 权限父ID       |
+| 8   | name  | String | 角色名字       |
 
 #### 返回值
 
