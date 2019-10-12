@@ -1,6 +1,97 @@
 const Mock = require('mockjs');
 let data = Mock.mock({
-  "permission": [],
+  "permission": [
+      {
+        "id": 1570872939736,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:35:39",
+        "subby": 1006,
+        "des": "后台管理",
+        "type": "menu",
+        "code": "111111",
+        "pId": 0,
+        "url": "/home/user_mgr",
+        "order": 1
+      },
+      {
+        "id": 1570872961833,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:36:1",
+        "subby": 1006,
+        "des": "商铺管理",
+        "type": "menu",
+        "code": "222222",
+        "pId": 0,
+        "url": "/home/shop_mgr",
+        "order": "2"
+      },
+      {
+        "id": 1570872984243,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:36:24",
+        "subby": 1006,
+        "des": "用户管理",
+        "type": "menu",
+        "code": "333333",
+        "pId": "1570872939736",
+        "url": "/home/user_mgr",
+        "order": 1
+      },
+      {
+        "id": 1570873025381,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:37:5",
+        "subby": 1006,
+        "des": "角色管理",
+        "type": "menu",
+        "code": "55555",
+        "pId": "1570872939736",
+        "url": "/home/role_mgr",
+        "order": "2"
+      },
+      {
+        "id": 1570873044424,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:37:24",
+        "subby": 1006,
+        "des": "权限管理",
+        "type": "menu",
+        "code": "10001",
+        "pId": "1570872939736",
+        "url": "/home/per_mgr",
+        "order": "3"
+      },
+      {
+        "id": 1570873067019,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:37:47",
+        "subby": 1006,
+        "des": "商品管理",
+        "type": "menu",
+        "code": "55555",
+        "pId": "1570872961833",
+        "url": "/home/goods_mgr",
+        "order": 1
+      },
+      {
+        "id": 1570873115349,
+        "del": 0,
+        "status": 0,
+        "subon": "2019-10-12 17:38:35",
+        "subby": 1006,
+        "des": "订单管理",
+        "type": "menu",
+        "pId": "1570872961833",
+        "url": "/home/order_mgr",
+        "order": 1
+      }
+  ],
   role: [{
     id: 5,
     pId: 0,
@@ -42,10 +133,61 @@ let data = Mock.mock({
     status: 0,
     del: 0
   }],
-  user_role: [],
+  user_role: [
+    {
+      "id": 1570873185899,
+      "del": 0,
+      "subon": "2019-10-12 17:39:45",
+      "roleId": 2,
+      "userId": 1006
+    }
+  ],
   user_permission: [
   ],
-  "role_permission": [],
+  "role_permission": [
+    {
+      "id": 1570873167128,
+      "del": 0,
+      "subon": "2019-10-12 17:39:27",
+      "permissionId": 1570872939736,
+      "roleId": 2
+    },
+    {
+      "id": 1570873167129,
+      "del": 0,
+      "subon": "2019-10-12 17:39:27",
+      "permissionId": 1570872961833,
+      "roleId": 2
+    },
+    {
+      "id": 1570873167130,
+      "del": 0,
+      "subon": "2019-10-12 17:39:27",
+      "permissionId": 1570872984243,
+      "roleId": 2
+    },
+    {
+      "id": 1570873167131,
+      "del": 0,
+      "subon": "2019-10-12 17:39:27",
+      "permissionId": 1570873044424,
+      "roleId": 2
+    },
+    {
+      "id": 1570873167132,
+      "del": 0,
+      "subon": "2019-10-12 17:39:27",
+      "permissionId": 1570873025381,
+      "roleId": 2
+    },
+    {
+      "id": 1570873167133,
+      "del": 0,
+      "subon": "2019-10-12 17:39:27",
+      "permissionId": 1570873067019,
+      "roleId": 2
+    }
+  ],
   menu: [{
     id: 1,
     order: 1,
