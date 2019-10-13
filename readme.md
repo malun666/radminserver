@@ -7,6 +7,13 @@
 ## 起步
 
 ```sh
+#### 第一步： 安装所有的依赖
+npm i
+# 或则
+yar
+
+
+#### 第二步： 启动服务
 npm run start
 
 # or u can use yarn
